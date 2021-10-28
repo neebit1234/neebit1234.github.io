@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joel Hunt Personal Profile Productivity</title>
+    <meta name="author" content="Joel Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- normalize - not mine -->
+    <link rel="normalize" href="normalize.css">
+    <!-- Style sheets for similar elements across the website and unique elements -->
+    <link rel="stylesheet" href="./personal_profile_CSS/site_design.CSS">
+    <link rel="stylesheet" href="./personal_profile_CSS/productivity.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Joel Hunt</h1>
+        </header>
+
+        <nav>
+            <!-- Navigation bar - drop down only on mobile -->
+            <button id="navdropbtn"> > Menu</button>
+            <div class="menu_content">
+                <a href="index.html">Home</a>
+                <a href="degree.html">Degree</a>
+                <a href="quiz.html">Quiz</a>
+                <!-- Individual id to set button darker on current page -->
+                <a id="menu_productivity" href="productivity.html">Productivity</a>
+                <a href="contact.html">Contact</a>
+                <a href="accessibility.html">Accessibility</a>
+            </div>
+        </nav>
+
+        <main>
+            <h3>Daily Productivity</h3>
+            <table id="data_table"></table>
+            <br>
+            <canvas id="data_chart"></canvas>
+            <section class="flex chart_btns">
+                <button id="pie_btn" class="chart_btn">Pie Chart</button>
+                <button id="bar_btn" class="chart_btn">Bar Chart</button>
+                <button id="box_btn" class="chart_btn">Box Plot</button>
+            </section>
+            <br>
+        </main>
+
+        <footer>
+            <p class="footer_content">Joel Hunt</p>
+            <a class="footer_content" href="contact.html">jmhunt1@sheffield.ac.uk</a>
+        </footer>
+
+    </div>
+    <script src=".\personal_profile_javascript\productivity.js"></script>
+</body>
+
+</html>

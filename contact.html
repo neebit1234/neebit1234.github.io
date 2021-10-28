@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joel Hunt Personal Profile Contact</title>
+    <meta name="author" content="Joel Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- normalize - not mine -->
+    <link rel="normalize" href="normalize.css">
+    <!-- Style sheets for similar elements across the website and unique elements -->
+    <link rel="stylesheet" href="./personal_profile_CSS/site_design.CSS">
+    <link rel="stylesheet" href="./personal_profile_CSS/contact.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Joel Hunt</h1>
+        </header>
+
+        <nav>
+            <!-- Navigation bar - drop down only on mobile -->
+            <button id="navdropbtn"> > Menu</button>
+            <div class="menu_content">
+                <a href="index.html">Home</a>
+                <a href="degree.html">Degree</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="productivity.html">Productivity</a>
+                <!-- Individual id to set button darker on current page -->
+                <a id="menu_contact" href="contact.html">Contact</a>
+                <a href="accessibility.html">Accessibility</a>
+            </div>
+        </nav>
+
+        <main class="flex">
+            <section id="details">
+                <h3>Contact details</h3>
+                <!-- Table for contact details to allow formating and alignment -->
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <th class="dataLabel">Name</th>
+                        <td>Joel</td>
+                    </tr>
+                    <tr>
+                        <th class="dataLabel">Surname</th>
+                        <td>Hunt</td>
+                    </tr>
+                    <tr>
+                        <th class="dataLabel">Telephone number</th>
+                        <!-- Fake Number -->
+                        <td>01234 567890</td>
+                    </tr>
+                    <tr>
+                        <th class="dataLabel">e-mail</th>
+                        <td>jmhunt1@sheffield.ac.uk</td>
+                    </tr>
+                    <tr>
+                        <th class="dataLabel">Address</th>
+                        <td>
+                            Department of Computer Science<br>
+                            The University of Sheffield <br>
+                            Regent Court<br>
+                            211 Portobello<br>
+                            Sheffield<br>
+                            S1 4DP<br>
+                            UK
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form_container">
+                <h2>E-mail form</h2>
+                <!-- Form to produce an email from user's details -->
+                <form name="email_form" id="email_form"
+                  action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php"
+                  method="POST">
+                    <input type="hidden" name="recipients"
+                     value="jmhunt1@sheffield.ac.uk">
+                    <p>
+                        <label for="email">Your e-mail:</label>
+                        <input type="email" name="email"
+                         id="email" placeholder="type your email..."
+                         maxlength="40" size="20" required>
+                    </p>
+                    <p>
+                        <label for="comments">Comments:</label>
+                        <textarea form="email_form" name="comments" id="comments" placeholder="Type your comments..."
+                            rows="4" cols="50"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p class="footer_content">Joel Hunt</p>
+            <a class="footer_content" href="contact.html">jmhunt1@sheffield.ac.uk</a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#menu_quiz {
+    background-color: rgb(20, 180, 80);
+}
+
+/* Image mobile design */
+.quiz_figure {
+    position: relative;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Positioning of image and buttons */
+.quiz_container {
+    display: flex;
+    align-content: center;
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+
+    /* Image figure desktop design */
+    .quiz_figure {
+        margin: 1% 2%;
+        max-width: 60%;
+    }
+}

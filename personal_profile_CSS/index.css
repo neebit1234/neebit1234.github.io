@@ -1,0 +1,18 @@
+
+#menu_home {
+    background-color: rgb(20, 180, 80);
+}
+
+figure {
+    width: 80%;
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+
+    figure {
+        margin: 1% 2%;
+        width: 25%;
+        float: left;
+    }
+}

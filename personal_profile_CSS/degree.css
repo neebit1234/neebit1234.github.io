@@ -1,0 +1,25 @@
+#menu_degree {
+    background-color: rgb(20, 180, 80);
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+    
+    /* Desktop design for each picture-info pair */
+    .degree_section {
+        clear: both;
+    }
+    
+    /* Two class that float left or right */
+    .degree_image {
+        margin: 1% 2%;
+        width: 25%;
+        float: left;
+    }
+
+    .degree_image_2 {
+        margin: 1% 2%;
+        width: 25%;
+        float: right;
+    }
+}

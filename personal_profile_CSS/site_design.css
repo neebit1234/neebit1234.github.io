@@ -1,0 +1,191 @@
+
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    scroll-padding: 2em;
+    background-color: rgb(170, 230, 235);
+}
+
+header {
+    padding: 1%;
+    background-color: rgb(30, 200, 100);
+}
+
+h1 {
+    margin: 0;
+}
+
+section > p {
+    margin: 1%;
+}
+
+h2 {
+    margin: 1%;
+}
+
+h3 {
+    margin: 1%;
+    text-align: center;
+}
+
+/* Nav similar on all pages, design for drop down (mobile-first), hover darkens buttons */
+nav {
+    position: relative;
+    background-color: rgb(30, 200, 100);
+    z-index: 9999;
+}
+
+#navdropbtn {
+    padding: 1%;
+    width: 100%;
+    text-align: left;
+    background-color:  rgb(30, 200, 100);
+    cursor: pointer;
+}
+
+.menu_content {
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.menu_content a {
+    color: black;
+    border: 1px none black;
+    border-bottom: solid;
+    background-color: rgb(30, 200, 100);
+    padding: 1%;
+    text-decoration: none;
+    display: block;
+}
+
+.menu_content a:hover {
+    background-color: rgb(20, 180, 80);
+}
+
+#navdropbtn:hover {
+    background-color: rgb(20, 180, 80);
+}
+
+.flex > section {
+    flex-direction: column;
+}
+
+
+/* Using figures to hold images */
+figure {
+    margin: 1% auto;
+    text-align: center;
+    border: 5px solid rgb(30, 200, 100);
+}
+
+figure>img {
+    width: 100%;
+}
+
+/* All buttons look similar with darken on hover */
+button {
+    margin: 0.5%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(30, 200, 100);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(20, 180, 80);
+}
+
+/* All tables have similar design - green headings, dark green labels */
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: rgb(30, 200, 100);
+}
+
+table .dataLabel {
+    background-color: rgb(20, 180, 80);
+}
+
+/* When hovering over a figure if there is somone to credit show a .credit span */
+figure {
+    position: relative;
+}
+
+figure>.credit {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 1%;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+figure:hover .credit {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Configure footer to always be at the bottom of the screen */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(30, 200, 100);
+}
+
+.footer_content {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Only show drop down on mobile */
+    nav:hover .menu_content {
+        display: block;
+    }
+
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+
+    #navdropbtn {
+        display: none;
+    }
+
+    .menu_content {
+        position: relative;
+        background-color: rgb(30, 200, 100);
+        display: inline-block;
+    }
+
+    .menu_content a {
+        margin: 1px;
+        border: none;
+        width: 13%;
+        float: left;
+    }
+
+    .menu_content a:hover {
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    .flex>section {
+        flex-wrap: wrap;
+    }
+
+}

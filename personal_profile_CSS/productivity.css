@@ -1,0 +1,34 @@
+#menu_productivity {
+    background-color: rgb(20, 180, 80);
+}
+
+/* Size and design for canvas for charts */
+#data_chart {
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: lightgrey;
+    position: relative;
+    display: block;
+    max-width: 80%;
+}
+
+.chart_btns {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+/* Table mobile design */
+#data_table {
+    width: 100%;
+    text-align: center;
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+    /* Table desktop design */
+    #data_table {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

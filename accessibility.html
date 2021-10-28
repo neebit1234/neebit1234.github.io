@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joel Hunt Personal Profile Accessibility</title>
+    <meta name="author" content="Joel Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- normalize - not mine -->
+    <link rel="normalize" href="normalize.css">
+    <!-- Style sheets for similar elements across the website and unique elements -->
+    <link rel="stylesheet" href="./personal_profile_CSS/site_design.CSS">
+    <link rel="stylesheet" href="./personal_profile_CSS/accessibility.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Joel Hunt</h1>
+        </header>
+
+        <nav>
+            <!-- Navigation bar - drop down only on mobile -->
+            <button id="navdropbtn"> > Menu</button>
+            <div class="menu_content">
+                <a href="index.html">Home</a>
+                <a href="degree.html">Degree</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="productivity.html">Productivity</a>
+                <a href="contact.html">Contact</a>
+                <!-- Individual id to set button darker on current page -->
+                <a id="menu_accessibility" href="accessibility.html">Accessibility</a>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Accessibility:</h2>
+                <p>Making a website accessible for all means both content and design should be simple and clear so that 
+                    most people can use it without needing to adapt it, while supporting those who do need to adapt things. 
+                    Making the web more accessible is something we should all strive for, especially as 1 in 5 people have a 
+                    long term illness, impairment or disability.
+                </p>
+            </section>
+            <section>
+                <h2>Mobile Accessible:</h2>
+                <p>Making a website function well on multiple styles of devices helps most users as most browsing is 
+                    done on mobile devices. Additionally, having optimised layouts for different screen sizes automatically 
+                    improves the ease of access on more obscure devices. 
+                </p>
+            </section>
+            <section>
+                <h2>Perceivability:</h2>
+                <p>It is important to make sure users can recognise and use the service with the senses available to them.<br>
+                    This has been achieved by providing 'alt text' on all images used - this allows screen readers to provide a 
+                    description of the image to those who cannot see the image.<br>
+                    Content is structured logically with all navigation coming before content to make it easier to find where the 
+                    user wants to be. Colour is used for the navigation bar and the colour changes to signify selection, however 
+                    this feature is not the only way to identify the current page. Each page has the page name at the top, the user 
+                    will know when they use a navigational button as the mouse changes to a hand and a border is used to distinguish the buttons.<br>
+                    All data visualisations can change colours when clicking on the graph, this allows the user to cycle to a combination 
+                    that works well for them.
+                </p>
+            </section>
+            <section>
+                <h2>Operable:</h2>
+                <p>Every page has a title to provide the user an understanding of where they are currently located.<br>
+                    Navigation buttons are highlighted in multiple ways - colour and border. This makes sure the user knows 
+                    where they will end up when using the navigation bar.<br>
+
+                </p>
+            </section>
+            <section>
+                <h2>Understandable:</h2>
+                <p>All text is written in plain English so will be Understandable for all English readers.<br>
+                    Features are consistant across all pages - navigation bar is common, each page has a title. 
+                    This makes the website predictable.
+                </p>
+            </section>
+            <section>
+                <h2>Robust:</h2>
+                <p>Modern and future browsers are supported with correct semantic elements. The use of a canvas makes 
+                    some outdated browsers struggle with the 'Productivity' page.
+                </p>
+            </section>
+            <br>
+        </main>
+
+        <footer>
+            <p class="footer_content">Joel Hunt</p>
+            <a class="footer_content" href="contact.html">jmhunt1@sheffield.ac.uk</a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joel Hunt Personal Profile Quiz</title>
+    <meta name="author" content="Joel Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- normalize - not mine -->
+    <link rel="normalize" href="normalize.css">
+    <!-- Style sheets for similar elements across the website and unique elements -->
+    <link rel="stylesheet" href="./personal_profile_CSS/site_design.CSS">
+    <link rel="stylesheet" href="./personal_profile_CSS/quiz.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Joel Hunt</h1>
+        </header>
+
+        <nav>
+            <!-- Navigation bar - drop down only on mobile -->
+            <button id="navdropbtn"> > Menu</button>
+            <div class="menu_content">
+                <a href="index.html">Home</a>
+                <a href="degree.html">Degree</a>
+                <!-- Individual id to set button darker on current page -->
+                <a id="menu_quiz" href="quiz.html">Quiz</a>
+                <a href="productivity.html">Productivity</a>
+                <a href="contact.html">Contact</a>
+                <a href="accessibility.html">Accessibility</a>
+            </div>
+        </nav>
+
+        <main class="flex">
+            <h3>Quiz</h3>
+            <section class="quiz_container">
+                <figure class="quiz_figure">
+                    <!-- Image in figure to allow caption and easy positioning -->
+                    <img src="./personal_profile_images/quiz_Q1.png" 
+                    alt="Quiz image 1: A logic gate with two inputs on a flat side and one output from a curved side with a circle.">
+                    <span class="credit">By Marco Olgio from thenounproject.com</span>
+                    <figcaption>What is this logic gate?</figcaption>
+                </figure>
+                <button class="answerbtn">AND</button>
+                <button class="answerbtn">OR</button>
+                <button class="answerbtn correctanswerbtn">NAND</button>
+                <button class="answerbtn">NOR</button>
+            </section>
+            <section class="quiz_container">
+                <figure class="quiz_figure">
+                    <!-- Image in figure to allow caption and easy positioning -->
+                    <img src="./personal_profile_images/quiz_Q2.svg" 
+                    alt="Quiz image 2: Ruby on Rails logo">
+                    <span class="credit">Jamie Dihiansan http://weblog.rubyonrails.org/2016/1/19/new-rails-identity/2, CC0, via Wikimedia Commons</span>
+                    <figcaption>What do you Ruby's packaged code such as Ruby on Rails?</figcaption>
+                </figure>
+                <button class="answerbtn">RubyFile</button>
+                <button class="answerbtn">RubyBlock</button>
+                <button class="answerbtn ">RubyPackage</button>
+                <button class="answerbtn correctanswerbtn">RubyGems</button>
+            </section>
+            <section class="quiz_container">
+                <figure class="quiz_figure">
+                    <!-- Image in figure to allow caption and easy positioning -->
+                    <img src="./personal_profile_images/quiz_Q3.jpg" 
+                    alt="Quiz image 3: An image of the main building of the university of Sheffield's Engineering Faculty">
+                    <span class="credit">Photo © Graham Hogg (cc-by-sa/2.0)</span>
+                    <figcaption>What is this building called?</figcaption>
+                </figure>
+                <button class="answerbtn correctanswerbtn">The Diamond</button>
+                <button class="answerbtn">The Shard</button>
+                <button class="answerbtn">The Emerald</button>
+                <button class="answerbtn">The Triangle</button>
+            </section>
+            <br>
+        </main>
+
+        <footer>
+            <p class="footer_content">Joel Hunt</p>
+            <a class="footer_content" href="contact.html">jmhunt1@sheffield.ac.uk</a>
+        </footer>
+
+    </div>
+    <script src=".\personal_profile_javascript\quiz.js"></script>
+</body>
+
+</html>

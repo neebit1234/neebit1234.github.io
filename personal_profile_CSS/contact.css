@@ -1,0 +1,78 @@
+#menu_contact {
+    background-color: rgb(20, 180, 80);
+}
+
+/* Element positioning */
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* Table mobile design */
+#details {
+    width: 90%;
+    align-items: center;
+}
+
+/* Unique table requirements */
+table {
+    margin: 1%;
+    width: 98%;
+    table-layout:auto;
+    text-align: end;
+}
+
+table .dataLabel {
+    text-align: center;
+}
+
+/* Unique form design */
+form {
+    padding: 1%;
+    width: 98%;
+    border-radius: 10px;
+    background-color: rgb(175, 210, 180);
+}
+
+#form_container {
+    width: 90%;
+    align-self: center;
+}
+
+form input {
+    width: 98%;
+}
+
+#comments {
+    width: 98%;
+    resize: vertical;
+}
+
+#submit {
+    margin: 0.5%;
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(30, 200, 100);
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(20, 180, 80);
+}
+
+/* When screen is larger than mobile */
+@media screen and (min-width: 600px) {
+
+    /* Position for desktop */
+    #details {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #form_container {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
